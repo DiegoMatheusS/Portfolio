@@ -111,6 +111,7 @@
     .sobrecontainerpesquisa{
         margin-left: -50%;
     }
+ 
   }
   @media only screen and (min-width: 1000px) {
     .lupa{
@@ -133,16 +134,38 @@
     width: 50px;
     height: 50px;
 }
+.logolinkedin{
+    position: absolute;
+    top: auto;
+    right: 120px; 
+    transform: translateY(10%);
+    width: 50px;
+    height: 50px;
+}
 .containertopicos{
     display: flex;
     margin-top: -80px;
     justify-content: start;
 }
 .sobre{
-    padding: 10px;
+    width: 2.5%;
     margin-left: 250px;
-    color: #1B73E8;
     border-bottom: solid #1B73E8;
+    padding: 5px;
+}
+.sobretext{
+    text-decoration: none;
+    margin-top: 15px;
+}
+.sobreimagem{
+    margin-left: 5px;
+    color: #1d1d1d;
+    text-decoration: none;
+    padding: 5px;
+}
+.sobreimagemtext{
+    text-decoration: none;
+    margin-top: 15px;
 }
 .linhacontainertopicos{
     border-style: groove;
