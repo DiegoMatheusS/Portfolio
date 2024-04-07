@@ -205,7 +205,7 @@
 }
 .imagem{
     height: 65%;
-    width: 82%;
+    width: 60%;
     margin-top: 10px;
     margin-left: 20%;
     margin-bottom: -6rem;
@@ -214,6 +214,11 @@
 }
 .githublink{
     font-size: 12px;
+    text-decoration: none;
+    color: #000000;
+}
+.titulopesquisa:hover{
+    text-decoration: underline;
 }
 .pesquisasobre{
     margin-left: 40%;
@@ -227,7 +232,9 @@
 }
 .textimgsobre{
     margin-left: 1rem;
-    margin-top: -8px;
+    margin-top: -5.5%;
+    text-decoration: none;
+    color: #000000;
 }
 .pesquisa{
     margin-top: 1rem;
