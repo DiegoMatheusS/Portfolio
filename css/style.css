@@ -108,6 +108,9 @@
      .titulopesquisa{
         font-size: 8px;
     }
+    .sobrecontainerpesquisa{
+        margin-left: -50%;
+    }
   }
   @media only screen and (min-width: 1000px) {
     .lupa{
@@ -201,13 +204,13 @@
     
 }
 .imagem{
-    background-image: url("/img/Banner.png");
-    height: 35%;
+    height: 65%;
+    width: 82%;
     margin-top: 10px;
-    margin-left: 40%;
-    margin-bottom: 15px;
+    margin-left: 20%;
+    margin-bottom: -6rem;
     border-radius: 12px;
-    flex-wrap: wrap-reverse;
+
 }
 .githublink{
     font-size: 12px;
@@ -289,6 +292,7 @@
     align-items: center;
     margin-top: 2rem;
     margin-left: 5%;
+    border: solid black;
 }
 
 
