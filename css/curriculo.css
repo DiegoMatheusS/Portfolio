@@ -9,8 +9,7 @@ body, html {
 
 .containerimagem{
     justify-content: center;
-    align-items: center;
-
+    align-items: center;    
 }
 .imagemcurriculum{
     max-width: 100%; /* Define a largura máxima da imagem */
@@ -20,6 +19,7 @@ body, html {
     width: 2.5%;
     margin-left: 250px;
     padding: 5px;
+    margin-top: 1rem;
 }
 .sobretext{
     text-decoration: none;
@@ -31,6 +31,7 @@ body, html {
     text-decoration: none;
     padding: 5px;
     border-bottom: solid #1B73E8;
+    margin-top: 1rem;
 }
 .sobreimagenstext{
     text-decoration: none;
