@@ -88,9 +88,11 @@
         margin-left: 60%;
     }
     .barrapesquisa{
-        width: 100%;
+        width: 80%;
     }
-
+    .sobreimagem{
+        margin-left: 20%;
+    }
 
   }
 
@@ -114,9 +116,8 @@
     .sobrecontainerpesquisa{
         margin-left: -50%;
     }
- 
   }
-  @media only screen and (min-width: 1000px) {
+  @media only screen and (min-width: 1300px) {
     .lupa{
         margin-left: 50%;
     }
@@ -126,6 +127,9 @@
     .nomepesquisa{
         font-size: 15px;
         padding: 3px;
+    }
+    .imagem{
+        height: 20%;
     }
   }
 
@@ -161,7 +165,7 @@
     margin-top: 15px;
 }
 .sobreimagem{
-    margin-left: 5px;
+    margin-left: 15px;
     color: #1d1d1d;
     text-decoration: none;
     padding: 5px;
