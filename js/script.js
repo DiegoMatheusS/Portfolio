@@ -38,3 +38,16 @@ function expande(button) {
         document.getElementById('question3').innerHTML ='⌃'
     }
   }
+  function contato(button) {
+
+    const resposta = button.parentElement.nextElementSibling;
+    if (resposta.style.display === "none") {
+        resposta.style.display = "block"; // Exibe a resposta quando está oculta
+        document.getElementById('question4').innerHTML ='⌄'
+        
+       
+    } else {
+        resposta.style.display = "none"; // Oculta a resposta quando está visível
+        document.getElementById('question4').innerHTML ='⌃'
+    }
+  }
