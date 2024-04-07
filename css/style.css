@@ -22,7 +22,7 @@
     width: 150px;
     height: 150px;
     margin-top: 10px;
-    margin-left: 50px;
+    margin-left: 5%;
 }
 .barrapesquisa{
     display: flex;
@@ -245,16 +245,7 @@
     margin-left: -100px;
     margin-top: 30px;
 }
-.logolinkedin{
-    position: fixed;
-    top: 0; 
-    right: 11.4rem; 
-    width: 50px; 
-    height: 50px;
-    margin-left: -100px;
-    margin-top: 30px;
-    
-}
+
 .containertopicos{
     display: flex;
     margin-top: 80px;
@@ -493,6 +484,65 @@
     display: flex;
     margin-top: 10px;
 }
+.perfis{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.instagran{
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+    margin-left: 10px;
+}
+.textinstagran{
+    text-decoration: none;
+}
+
+
+.logolinkedin{
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+    margin-left: 0%;
+}
+
+.textlinkedin{
+    text-decoration: none;
+}
+
+
+
+.github{
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+    margin-right: 40%;
+}
+
+.textgithub{
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .rodape{
     text-align: center;
