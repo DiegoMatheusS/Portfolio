@@ -210,28 +210,66 @@
     justify-content: start;
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .sobre{
-    width: 2.5%;
-    margin-left: 250px;
+    margin-left: 18.5%;
+    margin-top: 1%;
+    padding: 8px;
     border-bottom: solid #1B73E8;
-    padding: 5px;
-    margin-top: 2rem;
 }
 .sobretext{
     text-decoration: none;
     margin-top: 15px;
 }
 .sobreimagem{
-    margin-left: 15px;
-    color: #1d1d1d;
-    text-decoration: none;
-    padding: 5px;
-    margin-top: 2rem;
+    margin-left: 2%;
+    margin-top: 1%;
+    padding: 8px;
 }
 .sobreimagemtext{
     text-decoration: none;
     margin-top: 15px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .linhacontainertopicos{
     border-style: groove;
 }
