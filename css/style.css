@@ -19,11 +19,10 @@
 }
 
 .logo{
-    width: 250px;
-    height: 200px;
-    margin-top: 0px;
-    margin-left: 0px;
-    
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+    margin-left: 50px;
 }
 .barrapesquisa{
     display: flex;
@@ -64,6 +63,32 @@
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-height: px){
     .cabecalho{
         display: flex;
@@ -81,7 +106,7 @@
     .lupa{
         margin-left: 10%;
     }
-    
+
 }
 @media only screen and (min-height: 1180px) {
     .textpesquisa{
@@ -108,10 +133,16 @@
         justify-content: center;
         position: fixed;
         width: 100%;
-        height: 5%;
+        height: 4.5%;
         margin-top: -80px;
         background-color: #ffffff;
     }
+    .logo{
+        margin-left: -62%;
+        width: 120px;
+        height: 100px;
+    }
+
   }
 
   @media only screen and (max-width: 850px) {
@@ -172,6 +203,26 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 
 
 
