@@ -23,7 +23,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 50%;
     max-width: 600px; /* Define a largura máxima da barra de pesquisa */
     margin-top: -4.5rem;
     margin-left: -1rem; 
@@ -52,7 +52,7 @@
     
 }
 .lupa{
-    margin-left: 145px;
+    margin-left: 35%;
     color: #4284F4;
 
 }
@@ -66,7 +66,7 @@
 
     
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (width: 1000px) {
     .logoconta {
       right: 10px; 
     }
@@ -83,6 +83,9 @@
     }
     .lupa{
         margin-left: 10%;
+    }
+    .barrapesquisa{
+        width: 50%;
     }
   }
 .logogmail{
