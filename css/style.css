@@ -56,16 +56,6 @@
     color: #4284F4;
 
 }
-.logoconta{
-    position: absolute;
-    top: auto; /* Ajusta a posição verticalmente para o meio */
-    right: 20px; /* Define a distância do lado direito */
-    transform: translateY(10%); /* Corrige o posicionamento vertical */
-    width: 50px; /* Define a largura da imagem */
-    height: 50px; /* Define a altura da imagem */
-
-    
-}
 @media only screen and (width: 768px) {
     .logoconta {
       right: 10px; 
@@ -130,21 +120,33 @@
     }
   }
 
-.logogmail{
-    position: absolute;
-    top: auto;
-    right: 55px; 
-    transform: translateY(10%);
-    width: 50px;
+.logoconta{
+    position: fixed;
+    top: 0; 
+    right: 1rem; 
+    width: 50px; 
     height: 50px;
+    margin-top: 30px;
+    
+}
+.logogmail{
+    position: fixed;
+    top: 0; 
+    right: 6.2rem; 
+    width: 50px; 
+    height: 50px;
+    margin-left: -100px;
+    margin-top: 30px;
 }
 .logolinkedin{
-    position: absolute;
-    top: auto;
-    right: 120px; 
-    transform: translateY(10%);
-    width: 50px;
+    position: fixed;
+    top: 0; 
+    right: 11.4rem; 
+    width: 50px; 
     height: 50px;
+    margin-left: -100px;
+    margin-top: 30px;
+    
 }
 .containertopicos{
     display: flex;
