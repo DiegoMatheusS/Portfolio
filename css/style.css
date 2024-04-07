@@ -66,7 +66,7 @@
 
     
 }
-@media only screen and (width: 1000px) {
+@media only screen and (width: 768px) {
     .logoconta {
       right: 10px; 
     }
@@ -78,16 +78,50 @@
         margin-left: -12rem;
     }
     .nomepesquisa{
-        font-size: 10px;
+        font-size: 100px;
         padding: 3px;
     }
     .lupa{
-        margin-left: 10%;
+        margin-left: 60%;
     }
     .barrapesquisa{
-        width: 50%;
+        width: 100%;
+    }
+
+
+  }
+
+  @media only screen and (max-width: 850px) {
+    .lupa{
+        margin-left: 15%;
+    }
+    .barrapesquisa{
+        width: 40%;
+    }
+    .nomepesquisa{
+        font-size: 13px;
+        padding: 3px;
+    }
+    .containersobre{
+        margin: 10%;
+     }
+     .titulopesquisa{
+        font-size: 8px;
     }
   }
+  @media only screen and (min-width: 1000px) {
+    .lupa{
+        margin-left: 50%;
+    }
+    .barrapesquisa{
+        width: 80%;
+    }
+    .nomepesquisa{
+        font-size: 15px;
+        padding: 3px;
+    }
+  }
+
 .logogmail{
     position: absolute;
     top: auto;
@@ -159,12 +193,10 @@
 
 }
 .imagemsobre{
-    width: 55.1rem;
+    width: 45%;
 }
 .imagenssobre{
-    border: solid black;
-    padding: 60px;
-    margin-left: 40%;
+    border: solid black;;
     margin-bottom: 3rem;
     
 }
@@ -245,12 +277,21 @@
 
 
 
+
+
+
+
+
+
+
 .sobrecontainerpesquisa{
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
-    margin-left: 5rem;
+    margin-left: 5%;
 }
+
+
 .titulosobre{
     font-size: 20px;
     margin-bottom: 12px;
@@ -269,8 +310,7 @@
 .rodape{
     text-align: center;
     font-size: 18px;
-    color: #000000;
+    margin-top: 120%;
     padding: 20px;
-    margin-top: 28rem;
     background-color: #FAFAFB;
 }
