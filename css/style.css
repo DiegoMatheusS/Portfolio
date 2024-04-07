@@ -55,6 +55,17 @@
     margin-left: 35%;
     color: #4284F4;
 
+
+
+
+
+
+
+
+
+
+
+
 }
 @media only screen and (width: 768px) {
     .logoconta {
@@ -80,6 +91,9 @@
     .sobreimagem{
         margin-left: 20%;
     }
+    .imagem{
+        width: 500%;
+    }
 
   }
 
@@ -103,6 +117,7 @@
     .sobrecontainerpesquisa{
         margin-left: -50%;
     }
+    
   }
   @media only screen and (min-width: 1300px) {
     .lupa{
@@ -115,10 +130,15 @@
         font-size: 15px;
         padding: 3px;
     }
-    .imagem{
-        height: 20%;
-    }
   }
+
+
+
+
+
+
+
+
 
 .logoconta{
     position: fixed;
@@ -234,7 +254,7 @@
 }
 .imagem{
     height: 65%;
-    width: 60%;
+    width: 100;
     margin-top: 10px;
     margin-left: 20%;
     margin-bottom: -6rem;
