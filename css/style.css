@@ -138,9 +138,10 @@
         background-color: #ffffff;
     }
     .logo{
-        margin-left: -62%;
-        width: 120px;
-        
+        margin-left: -65%;
+        margin-top: 0;
+        width: 100px;
+        height: 100px;
     }
 
   }
