@@ -32,3 +32,35 @@
 
 }
 
+.projeto1 {
+    width: 200px;
+    height: 400px;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.projeto1 img {
+    width: 80%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.projeto1 a {
+    text-decoration: none;
+    color: #1B73E8;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.projeto1 a:hover {
+    text-decoration: underline;
+}
+
+
