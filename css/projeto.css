@@ -33,20 +33,21 @@
 }
 
 .projeto1 {
-    width: 200px;
+    width: 300px; /* Largura maior */
     height: 400px;
     background-color: #f0f0f0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 20px auto;
+    margin: 20px; /* Remove auto para alinhar à esquerda */
     border: 1px solid #ccc;
     border-radius: 8px;
+    float: left; /* Posiciona à esquerda */
 }
 
 .projeto1 img {
-    width: 80%;
+    width: 90%; /* Ajuste para ocupar mais espaço */
     height: auto;
     margin-bottom: 10px;
     border-radius: 4px;
@@ -62,5 +63,6 @@
 .projeto1 a:hover {
     text-decoration: underline;
 }
+
 
 
