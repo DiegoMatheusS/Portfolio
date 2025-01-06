@@ -32,68 +32,56 @@
 
 --------------projeto--------------
 
-.projeto1 {
-    width: 300px; /* Largura maior */
+/* Container dos projetos */
+.container-projetos {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebrar linha caso necessário */
+    justify-content: center; /* Centraliza os itens */
+    gap: 20px; /* Espaçamento entre os projetos */
+    margin: 20px auto; /* Centraliza o container */
+}
+
+/* Estilo dos projetos */
+.projeto {
+    width: 300px;
     height: 400px;
     background-color: #f0f0f0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 20px; /* Remove auto para alinhar à esquerda */
     border: 1px solid #ccc;
     border-radius: 8px;
-    float: left; /* Posiciona à esquerda */
-}
-
-.projeto1 img {
-    width: 90%; /* Ajuste para ocupar mais espaço */
-    height: auto;
-    margin-bottom: 10px;
-    border-radius: 4px;
-}
-
-.projeto1 a {
-    text-decoration: none;
-    color: #1B73E8;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.projeto1 a:hover {
-    text-decoration: underline;
-}
-
-.projeto2 {
-    width: 300px; /* Mesmo tamanho do projeto1 */
-    height: 400px;
-    background-color: #e0e0e0; /* Cor ligeiramente diferente para distinção */
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 20px; /* Espaçamento */
-    border: 1px solid #bbb;
-    border-radius: 8px;
-    float: left; /* Para alinhamento semelhante ao projeto1 */
+    text-align: center;
 }
 
-.projeto2 img {
-    width: 90%;
-    height: auto;
-    margin-bottom: 10px;
-    border-radius: 4px;
+/* Estilo da imagem dentro do projeto */
+.projeto img {
+    width: 100%; /* Faz a imagem ocupar toda a largura do projeto */
+    height: 70%; /* Ajusta a altura proporcional */
+    object-fit: cover; /* Garante que a imagem preencha sem distorcer */
+    border-bottom: 1px solid #ccc;
 }
 
-.projeto2 a {
-    text-decoration: none;
-    color: #1B73E8;
+/* Estilo do texto */
+.projeto p {
+    margin: 10px 0;
     font-size: 16px;
     font-weight: bold;
+    color: #1B73E8;
 }
 
-.projeto2 a:hover {
-    text-decoration: underline;
+/* Responsividade */
+@media (max-width: 1024px) {
+    .projeto {
+        width: 45%; /* Ajusta para dois projetos por linha em telas médias */
+    }
 }
 
-porem a imagem do projeto1 tem que estar do tamanho da div grande
+@media (max-width: 768px) {
+    .projeto {
+        width: 100%; /* Um projeto por linha em telas pequenas */
+    }
+}
+
