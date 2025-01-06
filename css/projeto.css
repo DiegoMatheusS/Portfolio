@@ -1,34 +1,3 @@
-.cabecalho {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: #333; /* Cor de fundo do cabeçalho */
-    height: 80px; /* Definir altura do cabeçalho */
-    position: relative;
-    z-index: 10; /* Certifique-se de que o cabeçalho fique acima dos outros elementos */
-}
-
-.cabecalho .logo img {
-    height: 50px; /* Ajuste a altura do logo */
-}
-
-.cabecalho .barrapesquisa {
-    display: flex;
-    align-items: center;
-}
-
-.cabecalho .logoconta, .cabecalho .logogmail {
-    margin-left: 20px;
-}
-
-
-
-
-
-
-
-
 .sobreprimeiro{
     margin-left: 18.5%;
     margin-top: 1%;
@@ -60,64 +29,71 @@
 
 }
 
-________ projeto ___________________
 
+--------------projeto--------------
 
-.container-projetos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Centraliza os projetos no container */
-    gap: 20px; /* Espaçamento entre os projetos */
-    margin: 20px auto; /* Centraliza o container na tela */
-    padding-top: 20px; /* Para garantir que não sobreponha o cabeçalho */
-    width: 100%; /* Garante que o container ocupe toda a largura disponível */
-}
-
-/* Estilos para os projetos */
-.projeto1, .projeto2 {
-    width: 18%; /* 5 projetos por linha, ajustando para caber */
+.projeto1 {
+    width: 300px; /* Largura maior */
     height: 400px;
     background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 20px; /* Remove auto para alinhar à esquerda */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    float: left; /* Posiciona à esquerda */
 }
 
-/* Estilos das imagens dentro dos projetos */
-.projeto1 img, .projeto2 img {
-    width: 100%; /* Imagem ocupa toda a largura da div */
-    height: 70%; /* Ajuste da altura para imagem */
-    object-fit: cover; /* Para cortar a imagem e não distorcê-la */
+.projeto1 img {
+    width: 90%; /* Ajuste para ocupar mais espaço */
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 4px;
 }
 
-/* Estilo do texto dentro dos projetos */
-.projeto1 p, .projeto2 p {
-    margin: 10px 0;
+.projeto1 a {
+    text-decoration: none;
+    color: #1B73E8;
     font-size: 16px;
     font-weight: bold;
-    text-align: center;
 }
 
-/* Responsividade para telas menores */
-@media (max-width: 1024px) {
-    .projeto1, .projeto2 {
-        width: 45%; /* Em telas menores, dois projetos por linha */
-    }
+.projeto1 a:hover {
+    text-decoration: underline;
 }
 
-@media (max-width: 768px) {
-    .projeto1, .projeto2 {
-        width: 100%; /* Em telas pequenas, um projeto por linha */
-        height: auto; /* Ajuste de altura para manter a proporção */
-    }
+.projeto2 {
+    width: 300px; /* Mesmo tamanho do projeto1 */
+    height: 400px;
+    background-color: #e0e0e0; /* Cor ligeiramente diferente para distinção */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px; /* Espaçamento */
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    float: left; /* Para alinhamento semelhante ao projeto1 */
 }
 
+.projeto2 img {
+    width: 90%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
 
+.projeto2 a {
+    text-decoration: none;
+    color: #1B73E8;
+    font-size: 16px;
+    font-weight: bold;
+}
 
+.projeto2 a:hover {
+    text-decoration: underline;
+}
 
-
-
+porem a imagem do projeto1 tem que estar do tamanho da div grande
