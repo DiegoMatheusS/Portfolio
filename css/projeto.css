@@ -34,17 +34,18 @@
 
 /* Container dos projetos */
 .container-projetos {
-    display: flex;
-    flex-wrap: wrap; /* Permite quebrar linha caso necessário */
-    justify-content: center; /* Centraliza os itens */
+    display: flex; /* Define layout flexível */
+    flex-wrap: wrap; /* Permite que os projetos quebrem linha se necessário */
+    justify-content: center; /* Centraliza os projetos horizontalmente */
     gap: 20px; /* Espaçamento entre os projetos */
-    margin: 20px auto; /* Centraliza o container */
+    margin: 20px auto; /* Centraliza o container na página */
+    max-width: 1600px; /* Limita a largura total do container */
 }
 
 /* Estilo dos projetos */
 .projeto {
-    width: 300px;
-    height: 400px;
+    width: 300px; /* Largura fixa */
+    height: 400px; /* Altura fixa */
     background-color: #f0f0f0;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -56,15 +57,14 @@
     text-align: center;
 }
 
-/* Estilo da imagem dentro do projeto */
+/* Imagem dentro do projeto */
 .projeto img {
-    width: 100%; /* Faz a imagem ocupar toda a largura do projeto */
-    height: 70%; /* Ajusta a altura proporcional */
-    object-fit: cover; /* Garante que a imagem preencha sem distorcer */
-    border-bottom: 1px solid #ccc;
+    width: 100%; /* Imagem ocupa toda a largura do projeto */
+    height: 70%; /* Ajusta altura proporcional */
+    object-fit: cover; /* Evita distorção da imagem */
 }
 
-/* Estilo do texto */
+/* Texto dentro do projeto */
 .projeto p {
     margin: 10px 0;
     font-size: 16px;
@@ -75,7 +75,7 @@
 /* Responsividade */
 @media (max-width: 1024px) {
     .projeto {
-        width: 45%; /* Ajusta para dois projetos por linha em telas médias */
+        width: 45%; /* Dois projetos por linha em telas médias */
     }
 }
 
@@ -84,4 +84,3 @@
         width: 100%; /* Um projeto por linha em telas pequenas */
     }
 }
-
