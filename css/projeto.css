@@ -34,53 +34,70 @@
 
 ________ projeto ___________________
 
-/* Contêiner que envolve os projetos, com flexbox para alinhamento */
-.container-projetos {
+/* Garantir que o cabeçalho tenha uma altura e o layout não se sobreponha */
+.cabecalho {
     display: flex;
-    flex-wrap: wrap; /* Permite quebra de linha se necessário */
-    gap: 20px; /* Espaçamento entre os projetos */
-    justify-content: flex-start; /* Alinha os itens à esquerda */
-    margin: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333; /* Cor de fundo do cabeçalho */
+    height: 80px; /* Definir altura do cabeçalho */
+    position: relative;
+    z-index: 10; /* Certifique-se de que o cabeçalho fique acima dos outros elementos */
 }
 
-/* Estilo dos projetos */
+.cabecalho .logo img {
+    height: 50px; /* Ajuste a altura do logo */
+}
+
+.cabecalho .barrapesquisa {
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho .logoconta, .cabecalho .logogmail {
+    margin-left: 20px;
+}
+
+.container-projetos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    margin: 20px;
+    padding-top: 20px; /* Para garantir que não sobreponha o cabeçalho */
+}
+
+/* Estilos para os projetos */
 .projeto1, .projeto2 {
-    width: 300px; /* Largura fixa para cada projeto */
-    height: 400px; /* Altura fixa */
-    background-color: #f0f0f0; /* Cor de fundo */
-    border: 1px solid #ccc; /* Borda */
-    border-radius: 8px; /* Bordas arredondadas */
-    overflow: hidden; /* Garante que a imagem não ultrapasse a div */
+    width: 300px;
+    height: 400px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: transform 0.3s; /* Efeito ao passar o mouse */
-}
-
-/* Efeito de ampliação ao passar o mouse */
-.projeto1:hover, .projeto2:hover {
-    transform: scale(1.05); /* Aumenta ligeiramente o tamanho */
 }
 
 .projeto1 img, .projeto2 img {
-    width: 100%; /* Imagem ocupa toda a largura */
-    height: 70%; /* A imagem ocupa 70% da altura */
-    object-fit: cover; /* Mantém a proporção da imagem sem distorção */
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
 }
 
 .projeto1 p, .projeto2 p {
-    margin: 10px 0; /* Espaço acima e abaixo do texto */
+    margin: 10px 0;
     font-size: 16px;
     font-weight: bold;
-    text-align: center; /* Centraliza o texto */
+    text-align: center;
 }
 
-/* Responsividade para telas pequenas */
 @media (max-width: 768px) {
     .projeto1, .projeto2 {
-        width: 100%; /* Cada projeto ocupa toda a largura em telas menores */
-        margin-bottom: 20px; /* Espaço entre projetos quando estão empilhados */
+        width: 100%;
     }
 }
 
