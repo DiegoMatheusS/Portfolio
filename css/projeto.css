@@ -33,7 +33,7 @@
 --------------projeto--------------
 
 /* Container dos projetos */
-.container-projetos {
+.topicos-projetos {
     display: flex; /* Define layout flexível */
     flex-wrap: wrap; /* Permite que os projetos quebrem linha se necessário */
     justify-content: center; /* Centraliza os projetos horizontalmente */
