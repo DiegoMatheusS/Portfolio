@@ -34,38 +34,39 @@
 
 ________ projeto ___________________
 
-/* Contêiner que engloba os projetos, garantindo que fiquem lado a lado */
+/* Contêiner que envolve os projetos, com flexbox para alinhamento */
 .container-projetos {
     display: flex;
-    justify-content: space-between; /* Espaço entre os projetos */
-    gap: 20px; /* Espaçamento entre as divs */
-    flex-wrap: wrap; /* Quebra em linha em telas pequenas */
-    margin: 20px 0;
+    flex-wrap: wrap; /* Permite quebra de linha se necessário */
+    gap: 20px; /* Espaçamento entre os projetos */
+    justify-content: flex-start; /* Alinha os itens à esquerda */
+    margin: 20px;
 }
 
-/* Cada projeto terá largura fixa de 300px, mas se adapta para telas pequenas */
+/* Estilo dos projetos */
 .projeto1, .projeto2 {
-    width: 300px; /* Largura fixa */
+    width: 300px; /* Largura fixa para cada projeto */
     height: 400px; /* Altura fixa */
     background-color: #f0f0f0; /* Cor de fundo */
-    margin: 0; /* Remove a margem para garantir o espaçamento pelo contêiner */
     border: 1px solid #ccc; /* Borda */
-    border-radius: 8px; /* Cantos arredondados */
+    border-radius: 8px; /* Bordas arredondadas */
     overflow: hidden; /* Garante que a imagem não ultrapasse a div */
-    cursor: pointer; /* Indica que é clicável */
-    transition: transform 0.3s; /* Animação ao passar o mouse */
-    flex: 1 1 300px; /* Flexível: os projetos podem se ajustar à largura */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s; /* Efeito ao passar o mouse */
 }
 
 /* Efeito de ampliação ao passar o mouse */
 .projeto1:hover, .projeto2:hover {
-    transform: scale(1.05); /* Ampliação ao passar o mouse */
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho */
 }
 
 .projeto1 img, .projeto2 img {
-    width: 100%;
-    height: 70%; /* A imagem ocupa 70% da altura da div */
-    object-fit: cover; /* Ajusta a imagem ao tamanho do container sem distorção */
+    width: 100%; /* Imagem ocupa toda a largura */
+    height: 70%; /* A imagem ocupa 70% da altura */
+    object-fit: cover; /* Mantém a proporção da imagem sem distorção */
 }
 
 .projeto1 p, .projeto2 p {
@@ -75,11 +76,11 @@ ________ projeto ___________________
     text-align: center; /* Centraliza o texto */
 }
 
-/* Responsividade: quando a largura da tela for menor que 768px, os projetos ocupam toda a largura */
+/* Responsividade para telas pequenas */
 @media (max-width: 768px) {
     .projeto1, .projeto2 {
-        width: 100%; /* Ocupa 100% da largura do contêiner em telas pequenas */
-        margin-bottom: 20px; /* Espaçamento entre projetos verticais */
+        width: 100%; /* Cada projeto ocupa toda a largura em telas menores */
+        margin-bottom: 20px; /* Espaço entre projetos quando estão empilhados */
     }
 }
 
