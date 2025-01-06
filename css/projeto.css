@@ -32,82 +32,47 @@
 
 }
 
-.projeto1 {
-    width: 300px; /* Largura maior */
-    height: 400px;
-    background-color: #f0f0f0;
+/* Tornar toda a div clicável */
+.projeto1 a, .projeto2 a {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 20px; /* Remove auto para alinhar à esquerda */
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    float: left; /* Posiciona à esquerda */
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; /* Herda a cor do texto padrão */
+    width: 100%;
+    height: 100%;
 }
 
-.projeto1 img {
-    width: 90%; /* Ajuste para ocupar mais espaço */
-    height: auto;
-    margin-bottom: 10px;
-    border-radius: 4px;
-}
-
-.projeto1 a {
-    text-decoration: none;
-    color: #1B73E8;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.projeto1 a:hover {
-    text-decoration: underline;
-}
-
-.projeto2 {
-    width: 300px; /* Mesmo tamanho do projeto1 */
+.projeto1, .projeto2 {
+    width: 300px; /* Tamanho do container */
     height: 400px;
-    background-color: #e0e0e0; /* Cor ligeiramente diferente para distinção */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 20px; /* Espaçamento */
-    border: 1px solid #bbb;
-    border-radius: 8px;
-    float: left; /* Para alinhamento semelhante ao projeto1 */
+    background-color: #f0f0f0; /* Cor de fundo */
+    margin: 20px; /* Espaçamento entre os projetos */
+    border: 1px solid #ccc; /* Borda */
+    border-radius: 8px; /* Cantos arredondados */
+    overflow: hidden; /* Garante que a imagem não ultrapasse a div */
+    cursor: pointer; /* Indica que é clicável */
+    transition: transform 0.3s; /* Animação ao passar o mouse */
 }
 
-.projeto2 img {
-    width: 90%;
-    height: auto;
-    margin-bottom: 10px;
-    border-radius: 4px;
+.projeto1:hover, .projeto2:hover {
+    transform: scale(1.05); /* Ampliação ao passar o mouse */
 }
 
-.projeto2 a {
-    text-decoration: none;
-    color: #1B73E8;
+.projeto1 img, .projeto2 img {
+    width: 100%;
+    height: 70%; /* A imagem ocupa 70% da altura da div */
+    object-fit: cover; /* Ajusta a imagem ao tamanho do container sem distorção */
+}
+
+.projeto1 p, .projeto2 p {
+    margin: 10px 0; /* Espaço acima e abaixo do texto */
     font-size: 16px;
     font-weight: bold;
+    text-align: center; /* Centraliza o texto */
 }
 
-.projeto2 a:hover {
-    text-decoration: underline;
-}
-.projeto1 img {
-    width: 100%; /* A imagem ocupa 100% da largura da div */
-    height: 100%; /* A imagem ocupa 100% da altura da div */
-    object-fit: cover; /* Garante que a imagem preencha a div sem distorção */
-    border-radius: 4px; /* Mantém o arredondamento */
-}
-
-.projeto2 img {
-    width: 90%; /* A imagem ocupa 100% da largura da div */
-    height: 90%; /* A imagem ocupa 100% da altura da div */
-    object-fit: cover; /* Garante que a imagem preencha a div sem distorção */
-    border-radius: 4px; /* Mantém o arredondamento */
-}
 
 
 
