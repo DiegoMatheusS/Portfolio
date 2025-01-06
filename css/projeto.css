@@ -66,15 +66,16 @@ ________ projeto ___________________
 .container-projetos {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    justify-content: flex-start;
-    margin: 20px;
+    justify-content: center; /* Centraliza os projetos no container */
+    gap: 20px; /* Espaçamento entre os projetos */
+    margin: 20px auto; /* Centraliza o container na tela */
     padding-top: 20px; /* Para garantir que não sobreponha o cabeçalho */
+    width: 100%; /* Garante que o container ocupe toda a largura disponível */
 }
 
 /* Estilos para os projetos */
 .projeto1, .projeto2 {
-    width: 300px;
+    width: 18%; /* 5 projetos por linha, ajustando para caber */
     height: 400px;
     background-color: #f0f0f0;
     border: 1px solid #ccc;
@@ -86,12 +87,14 @@ ________ projeto ___________________
     justify-content: center;
 }
 
+/* Estilos das imagens dentro dos projetos */
 .projeto1 img, .projeto2 img {
-    width: 100%;
-    height: 70%;
-    object-fit: cover;
+    width: 100%; /* Imagem ocupa toda a largura da div */
+    height: 70%; /* Ajuste da altura para imagem */
+    object-fit: cover; /* Para cortar a imagem e não distorcê-la */
 }
 
+/* Estilo do texto dentro dos projetos */
 .projeto1 p, .projeto2 p {
     margin: 10px 0;
     font-size: 16px;
@@ -99,12 +102,19 @@ ________ projeto ___________________
     text-align: center;
 }
 
-@media (max-width: 768px) {
+/* Responsividade para telas menores */
+@media (max-width: 1024px) {
     .projeto1, .projeto2 {
-        width: 100%;
+        width: 45%; /* Em telas menores, dois projetos por linha */
     }
 }
 
+@media (max-width: 768px) {
+    .projeto1, .projeto2 {
+        width: 100%; /* Em telas pequenas, um projeto por linha */
+        height: auto; /* Ajuste de altura para manter a proporção */
+    }
+}
 
 
 
