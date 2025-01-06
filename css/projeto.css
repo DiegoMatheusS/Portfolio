@@ -32,7 +32,14 @@
 
 }
 
-/* Tornar toda a div clicável */
+.container-projetos {
+    display: flex;
+    justify-content: space-between; /* Espaço entre os projetos */
+    gap: 20px; /* Espaçamento entre as divs */
+    flex-wrap: wrap; /* Quebra em linha em telas pequenas */
+    margin: 20px 0;
+}
+
 .projeto1 a, .projeto2 a {
     display: flex;
     flex-direction: column;
@@ -45,10 +52,10 @@
 }
 
 .projeto1, .projeto2 {
-    width: 300px; /* Tamanho do container */
-    height: 400px;
+    width: 48%; /* Define a largura para que fiquem lado a lado */
+    height: 400px; /* Altura fixa */
     background-color: #f0f0f0; /* Cor de fundo */
-    margin: 20px; /* Espaçamento entre os projetos */
+    margin: 0; /* Remove a margem para garantir o espaçamento pelo contêiner */
     border: 1px solid #ccc; /* Borda */
     border-radius: 8px; /* Cantos arredondados */
     overflow: hidden; /* Garante que a imagem não ultrapasse a div */
@@ -72,6 +79,7 @@
     font-weight: bold;
     text-align: center; /* Centraliza o texto */
 }
+
 
 
 
