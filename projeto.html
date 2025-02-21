@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Portfólio</title>
+    <title>Portfólio - [Seu Nome]</title>
+    <meta name="description" content="Descrição do seu portfólio">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/projeto.css">
     <script src="js/script.js"></script>
@@ -12,67 +13,96 @@
 </head>
 
 <body>
-    <div class="cabecalho">
-        <div class="logo">
-            <a href="index.html"><img class="logo" src="img/Diego M..png" alt=""></a>
-        </div>
-        <div class="barrapesquisa">
-            <div class="textpesquisa">
-                <p class="nomepesquisa">https://github.com/DiegoMatheusS</p>
-                <div class="lupa">
-                    <a class="lupa" href="https://github.com/DiegoMatheusS"><span class="material-symbols-outlined">
-                            search
-                        </span></a>
+    <header>
+        <div class="cabecalho">
+            <div class="logo">
+                <a href="index.html"><img class="logo" src="img/Diego M..png" alt="Logotipo"></a>
+            </div>
+            <div class="barrapesquisa">
+                <div class="textpesquisa">
+                    <p class="nomepesquisa">https://github.com/DiegoMatheusS</p>
+                    <div class="lupa">
+                        <a class="lupa" href="https://github.com/DiegoMatheusS" target="_blank"><span
+                                class="material-symbols-outlined">
+                                search
+                            </span></a>
+                    </div>
+                </div>
+                <div class="logoconta">
+                    <a href="index.html"> <img class="logoconta" src="img/logoconta.png"
+                            alt="Logotipo da sua conta"></a>
+                </div>
+                <div class="logogmail">
+                    <a href="mailto:dms.diego.2019@gmail.com" target="_blank"><img class="logogmail"
+                            src="img/logogmail.png" alt="Logotipo do Gmail">
+                    </a>
                 </div>
             </div>
-            <div class="logoconta">
-                <a href="index.html"> <img class="logoconta" src="img/logoconta.png" alt="logoconta"></a>
+        </div>
+        <nav>
+            <div class="containertopicos">
+                <div class="sobreprimeiro">
+                    <a class="sobretext" href="index.html">
+                        <p>Todas</p>
+                    </a>
+                </div>
+                <div class="sobreimagem">
+                    <a class="sobreimagemtext" href="Curriculo.html">
+                        <p>Imagens</p>
+                    </a>
+                </div>
+                <div class="projetosobreimagem">
+                    <a class="projetosobreimagemtext" href="projeto.html">
+                        <p>Projetos</p>
+                    </a>
+                </div>
             </div>
-            <div class="logogmail">
-                <a href="mailto:dms.diego.2019@gmail.com"><img class="logogmail" src="img/logogmail.png" alt="logogmail">
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="containertopicos">
-        <div class="sobreprimeiro">
-            <a class="sobretext" href="index.html"><p style="color: #707579;">Todas</p></a>
-        </div>
-        <div class="sobreimagem">
-            <a class="sobreimagemtext" href="Curriculo.html"><p style="color: #707579;">Imagens</p></a>
-        </div>
-        <div class="projetosobreimagem">
-            <a class="projetosobreimagemtext" href="projeto.html"><p style="color: #1B73E8;">Projetos</p></a>
-        </div>
-    </div>
-    <hr class="linhacontainertopicos">
+            <hr class="linhacontainertopicos">
+        </nav>
+    </header>
 
-    <div class="topicos-projetos">
-        <div class="projeto">
-            <a href="https://ecocria.azurewebsites.net/" target="_blank">
-                <img src="img/EcoCria.png" alt="Projeto EcoCria">
-                <p>EcoCria</p>
-            </a>
+    <main>
+        <section id="projetos">
+            <div class="topicos-projetos">
+                <div class="projeto">
+                    <a href="https://ecocria.azurewebsites.net/" target="_blank">
+                        <img src="img/EcoCria.png" alt="Logotipo do projeto EcoCria">
+                        <p>EcoCria</p>
+                        <p>Descrição do projeto EcoCria.</p>
+                    </a>
+                </div>
+                <div class="projeto">
+                    <a href="https://investimentomvc.azurewebsites.net/" target="_blank">
+                        <img src="img/investimento.png" alt="Logotipo do projeto Investimento">
+                        <p>Investimento</p>
+                        <p>Descrição do projeto Investimento.</p>
+                    </a>
+                </div>
+                <div class="projeto">
+                    <a href="https://outroprojeto.com" target="_blank">
+                        <img src="img/outroprojeto.png" alt="Imagem do projeto Outro Projeto">
+                        <p>Outro Projeto</p>
+                        <p>Descrição do projeto Outro Projeto.</p>
+                    </a>
+                </div>
+                <div class="projeto">
+                    <a href="https://novoprojeto.com" target="_blank">
+                        <img src="img/novoprojeto.png" alt="Imagem do projeto Novo Projeto">
+                        <p>Novo Projeto</p>
+                        <p>Descrição do projeto Novo Projeto.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="informacoes-contato">
+            <h2>Contato</h2>
+            <p>Email: dms.diego.2019@gmail.com</p>
+            <p>Telefone: (11) 96057-0645</p>
         </div>
-        <div class="projeto">
-            <a href="https://investimentomvc.azurewebsites.net/" target="_blank">
-                <img src="img/investimento.png" alt="Projeto Investimento">
-                <p>Investimento</p>
-            </a>
-        </div>
-        <div class="projeto">
-            <a href="https://outroprojeto.com" target="_blank">
-                <img src="img/outroprojeto.png" alt="Outro Projeto">
-                <p>Outro Projeto</p>
-            </a>
-        </div>
-        <div class="projeto">
-            <a href="https://novoprojeto.com" target="_blank">
-                <img src="img/novoprojeto.png" alt="Novo Projeto">
-                <p>Novo Projeto</p>
-            </a>
-        </div>
-    </div>
+    </footer>
 </body>
 
 </html>
