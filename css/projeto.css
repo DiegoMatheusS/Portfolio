@@ -1,141 +1,171 @@
-/* Cores, fontes e outros estilos globais */
-:root {
-    --cor-primaria: #1B73E8;
-    --cor-secundaria: #707579;
-    --cor-terciaria: #f0f0f0;
-    --borda-projeto: #ccc;
-    --fonte-principal: 'Arial', sans-serif;
+.sobreprimeiro{
+
+    margin-left: 18.5%;
+
+    margin-top: 1%;
+
+    padding: 8px;
+
+
+
 }
 
-body {
-    font-family: var(--fonte-principal);
-    color: var(--cor-secundaria);
-    margin: 0;
+.sobretext{
+
+    text-decoration: none;
+
+    margin-top: 15px;
+
 }
 
-/* Cabeçalho */
-.cabecalho {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: var(--cor-terciaria);
+.sobreimagem{
+
+    margin-left: 1%;
+
+    margin-top: 1%;
+
+    padding: 8px;
+
 }
 
-.logo img {
-    max-height: 50px;
+.sobreimagemtext{
+
+    text-decoration: none;
+
+    margin-top: 15px;
+
 }
 
-.barrapesquisa {
-    display: flex;
-    align-items: center;
+.projetosobreimagem{
+
+    margin-left: 1%;
+
+    margin-top: 1%;
+
+    padding: 8px;
+
+    border-bottom: solid #1B73E8;
+
 }
 
-.textpesquisa {
-    display: flex;
-    align-items: center;
-    margin-right: 10px;
+.projetosobreimagemtext{
+
+    text-decoration: none;
+
+    margin-top: 15px;
+
+
+
 }
 
-.lupa {
-    margin-left: 5px;
-}
 
-.logoconta img,
-.logogmail img {
-    max-height: 30px;
-    margin-left: 10px;
-}
 
-/* Menu de navegação */
-nav {
-    background-color: var(--cor-terciaria);
-    padding: 10px;
-}
 
-.containertopicos {
-    display: flex;
-    align-items: center;
-    margin-left: 18.5%; /* Mantém a margem original */
-}
 
-.sobreprimeiro,
-.sobreimagem,
-.projetosobreimagem {
-    padding: 8px;
-    margin: 0 5px;
-}
+--------------projeto--------------
 
-.sobretext,
-.sobreimagemtext,
-.projetosobreimagemtext {
-    text-decoration: none;
-    color: var(--cor-secundaria);
-}
 
-.projetosobreimagem {
-    border-bottom: 2px solid var(--cor-primaria);
-}
 
-.linhacontainertopicos {
-    border: none;
-    height: 1px;
-    background-color: var(--cor-secundaria);
-    margin: 10px 0;
-}
-
-/* Seção de projetos */
-#projetos {
-    padding: 20px;
-}
+/* Container dos projetos */
 
 .topicos-projetos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    width: 100%; /* Ocupa a largura total para os projetos ficarem lado a lado */
+
+    display: flex; /* Define layout flexível */
+
+    flex-wrap: wrap; /* Permite que os projetos quebrem linha se necessário */
+
+    justify-content: center; /* Centraliza os projetos horizontalmente */
+
+    gap: 20px; /* Espaçamento entre os projetos */
+
+    margin: 20px auto; /* Centraliza o container na página */
+
+    max-width: 1600px; /* Limita a largura total do container */
+
 }
+
+
+
+/* Estilo dos projetos */
 
 .projeto {
-    width: 300px;
-    height: 400px;
-    background-color: #fff;
-    border: 1px solid var(--borda-projeto);
-    border-radius: 8px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+
+    width: 300px; /* Largura fixa */
+
+    height: 400px; /* Altura fixa */
+
+    background-color: #f0f0f0;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
 }
 
-.projeto a {
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-}
+
+
+/* Imagem dentro do projeto */
 
 .projeto img {
-    width: 100%;
-    height: 70%;
-    object-fit: cover;
+
+    width: 100%; /* Imagem ocupa toda a largura do projeto */
+
+    height: 70%; /* Ajusta altura proporcional */
+
+    object-fit: cover; /* Evita distorção da imagem */
+
 }
+
+
+
+/* Texto dentro do projeto */
 
 .projeto p {
-    margin: 10px 0;
-    color: var(--cor-primaria);
+
+    margin: 10px 0;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    color: #1B73E8;
+
 }
 
-.projeto p:last-of-type {
-    font-size: 14px;
-    color: var(--cor-secundaria);
-    padding: 0 10px;
+
+
+/* Responsividade */
+
+@media (max-width: 1024px) {
+
+    .projeto {
+
+        width: 45%; /* Dois projetos por linha em telas médias */
+
+    }
+
 }
 
-/* Rodapé */
-footer {
-    background-color: var(--cor-ter
+
+
+@media (max-width: 768px) {
+
+    .projeto {
+
+        width: 100%; /* Um projeto por linha em telas pequenas */
+
+    }
+
+}
