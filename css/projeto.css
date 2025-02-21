@@ -32,55 +32,34 @@
 
 --------------projeto--------------
 
-/* Container dos projetos */
-.topicos-projetos {
-    display: flex; /* Define layout flexível */
-    flex-wrap: wrap; /* Permite que os projetos quebrem linha se necessário */
-    justify-content: center; /* Centraliza os projetos horizontalmente */
-    gap: 20px; /* Espaçamento entre os projetos */
-    margin: 20px auto; /* Centraliza o container na página */
-    max-width: 1600px; /* Limita a largura total do container */
+:root {
+    --cor-primaria: #1B73E8;
+    --cor-secundaria: #707579;
+    --fonte-principal: 'Arial', sans-serif;
 }
 
-/* Estilo dos projetos */
-.projeto {
-    width: 300px; /* Largura fixa */
-    height: 400px; /* Altura fixa */
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+body {
+    font-family: var(--fonte-principal);
+    color: var(--cor-secundaria);
 }
 
-/* Imagem dentro do projeto */
-.projeto img {
-    width: 100%; /* Imagem ocupa toda a largura do projeto */
-    height: 70%; /* Ajusta altura proporcional */
-    object-fit: cover; /* Evita distorção da imagem */
+/* ... (resto do seu CSS) ... */
+
+.sobreprimeiro {
+    margin-left: 18.5%;
+    margin-top: 1%;
+    padding: 8px;
 }
 
-/* Texto dentro do projeto */
+.sobretext {
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+/* ... (resto do seu CSS) ... */
+
 .projeto p {
-    margin: 10px 0;
-    font-size: 16px;
-    font-weight: bold;
-    color: #1B73E8;
+    color: var(--cor-primaria);
 }
 
-/* Responsividade */
-@media (max-width: 1024px) {
-    .projeto {
-        width: 45%; /* Dois projetos por linha em telas médias */
-    }
-}
-
-@media (max-width: 768px) {
-    .projeto {
-        width: 100%; /* Um projeto por linha em telas pequenas */
-    }
-}
+/* ... (resto do seu CSS) ... */
