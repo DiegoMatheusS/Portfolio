@@ -1,171 +1,86 @@
-.sobreprimeiro{
-
-    margin-left: 18.5%;
-
-    margin-top: 1%;
-
-    padding: 8px;
-
-
-
+.sobreprimeiro {
+    margin-left: 18.5%;
+    margin-top: 1%;
+    padding: 8px;
 }
 
-.sobretext{
-
-    text-decoration: none;
-
-    margin-top: 15px;
-
+.sobretext {
+    text-decoration: none;
+    margin-top: 15px;
 }
 
-.sobreimagem{
-
-    margin-left: 1%;
-
-    margin-top: 1%;
-
-    padding: 8px;
-
+.sobreimagem {
+    margin-left: 1%;
+    margin-top: 1%;
+    padding: 8px;
 }
 
-.sobreimagemtext{
-
-    text-decoration: none;
-
-    margin-top: 15px;
-
+.sobreimagemtext {
+    text-decoration: none;
+    margin-top: 15px;
 }
 
-.projetosobreimagem{
-
-    margin-left: 1%;
-
-    margin-top: 1%;
-
-    padding: 8px;
-
-    border-bottom: solid #1B73E8;
-
+.projetosobreimagem {
+    margin-left: 1%;
+    margin-top: 1%;
+    padding: 8px;
+    border-bottom: solid #1B73E8;
 }
 
-.projetosobreimagemtext{
-
-    text-decoration: none;
-
-    margin-top: 15px;
-
-
-
+.projetosobreimagemtext {
+    text-decoration: none;
+    margin-top: 15px;
 }
-
-
-
-
-
---------------projeto--------------
-
-
 
 /* Container dos projetos */
-
 .topicos-projetos {
-
-    display: flex; /* Define layout flexível */
-
-    flex-wrap: wrap; /* Permite que os projetos quebrem linha se necessário */
-
-    justify-content: center; /* Centraliza os projetos horizontalmente */
-
-    gap: 20px; /* Espaçamento entre os projetos */
-
-    margin: 20px auto; /* Centraliza o container na página */
-
-    max-width: 1600px; /* Limita a largura total do container */
-
+    display: flex; /* Define layout flexível */
+    flex-wrap: wrap; /* Permite que os projetos quebrem linha se necessário */
+    justify-content: center; /* Centraliza os projetos horizontalmente */
+    gap: 20px; /* Espaçamento entre os projetos */
+    margin: 20px auto; /* Centraliza o container na página */
+    max-width: 1600px; /* Limita a largura total do container */
 }
-
-
 
 /* Estilo dos projetos */
-
 .projeto {
-
-    width: 300px; /* Largura fixa */
-
-    height: 400px; /* Altura fixa */
-
-    background-color: #f0f0f0;
-
-    border: 1px solid #ccc;
-
-    border-radius: 8px;
-
-    overflow: hidden;
-
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: center;
-
-    justify-content: center;
-
-    text-align: center;
-
+    width: 300px; /* Largura fixa */
+    height: 400px; /* Altura fixa */
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
-
-
 
 /* Imagem dentro do projeto */
-
 .projeto img {
-
-    width: 100%; /* Imagem ocupa toda a largura do projeto */
-
-    height: 70%; /* Ajusta altura proporcional */
-
-    object-fit: cover; /* Evita distorção da imagem */
-
+    width: 100%; /* Imagem ocupa toda a largura do projeto */
+    height: 70%; /* Ajusta altura proporcional */
+    object-fit: cover; /* Evita distorção da imagem */
 }
-
-
 
 /* Texto dentro do projeto */
-
 .projeto p {
-
-    margin: 10px 0;
-
-    font-size: 16px;
-
-    font-weight: bold;
-
-    color: #1B73E8;
-
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #1B73E8;
 }
-
-
 
 /* Responsividade */
-
 @media (max-width: 1024px) {
-
-    .projeto {
-
-        width: 45%; /* Dois projetos por linha em telas médias */
-
-    }
-
+    .projeto {
+        width: 45%; /* Dois projetos por linha em telas médias */
+    }
 }
 
-
-
 @media (max-width: 768px) {
-
-    .projeto {
-
-        width: 100%; /* Um projeto por linha em telas pequenas */
-
-    }
-
+    .projeto {
+        width: 100%; /* Um projeto por linha em telas pequenas */
+    }
 }
