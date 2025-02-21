@@ -55,9 +55,8 @@ nav {
 
 .containertopicos {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
-    margin-left: 18.5%;
+    margin-left: 18.5%; /* Mantém a margem original */
 }
 
 .sobreprimeiro,
@@ -95,7 +94,7 @@ nav {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    width: 100%;
+    width: 100%; /* Ocupa a largura total para os projetos ficarem lado a lado */
 }
 
 .projeto {
@@ -139,5 +138,4 @@ nav {
 
 /* Rodapé */
 footer {
-    background-color: var(--cor-terciaria);
-    padding: 20px;
+    background-color: var(--cor-ter
