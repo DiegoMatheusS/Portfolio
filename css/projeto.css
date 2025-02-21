@@ -1,65 +1,169 @@
-.sobreprimeiro{
-    margin-left: 18.5%;
-    margin-top: 1%;
-    padding: 8px;
-
-}
-.sobretext{
-    text-decoration: none;
-    margin-top: 15px;
-}
-.sobreimagem{
-    margin-left: 1%;
-    margin-top: 1%;
-    padding: 8px;
-}
-.sobreimagemtext{
-    text-decoration: none;
-    margin-top: 15px;
-}
-.projetosobreimagem{
-    margin-left: 1%;
-    margin-top: 1%;
-    padding: 8px;
-    border-bottom: solid #1B73E8;
-}
-.projetosobreimagemtext{
-    text-decoration: none;
-    margin-top: 15px;
-
-}
-
-
---------------projeto--------------
-
+/* Cores, fontes e outros estilos globais */
 :root {
     --cor-primaria: #1B73E8;
     --cor-secundaria: #707579;
+    --cor-terciaria: #f0f0f0;
+    --borda-projeto: #ccc;
     --fonte-principal: 'Arial', sans-serif;
 }
 
 body {
     font-family: var(--fonte-principal);
     color: var(--cor-secundaria);
+    margin: 0; /* Remove margens padrão do body */
 }
 
-/* ... (resto do seu CSS) ... */
+/* Cabeçalho */
+.cabecalho {
+    display: flex;
+    justify-content: space-between; /* Distribui os elementos horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 20px;
+    background-color: var(--cor-terciaria);
+}
 
-.sobreprimeiro {
-    margin-left: 18.5%;
-    margin-top: 1%;
+.logo img {
+    max-height: 50px; /* Ajuste a altura máxima do logo */
+}
+
+.barrapesquisa {
+    display: flex;
+    align-items: center;
+}
+
+.textpesquisa {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.lupa {
+    margin-left: 5px;
+}
+
+.logoconta img,
+.logogmail img {
+    max-height: 30px; /* Ajuste a altura máxima dos ícones */
+    margin-left: 10px;
+}
+
+/* Menu de navegação */
+nav {
+    background-color: var(--cor-terciaria);
+    padding: 10px;
+}
+
+.containertopicos {
+    display: flex;
+    justify-content: flex-start; /* Alinha os tópicos à esquerda */
+    align-items: center;
+    margin-left: 18.5%; /* Mantém a margem à esquerda */
+}
+
+.sobreprimeiro,
+.sobreimagem,
+.projetosobreimagem {
     padding: 8px;
+    margin: 0 5px; /* Adiciona margem entre os tópicos */
 }
 
-.sobretext {
+.sobretext,
+.sobreimagemtext,
+.projetosobreimagemtext {
     text-decoration: none;
-    margin-top: 15px;
+    color: var(--cor-secundaria);
 }
 
-/* ... (resto do seu CSS) ... */
+.projetosobreimagem {
+    border-bottom: 2px solid var(--cor-primaria);
+}
+
+.linhacontainertopicos {
+    border: none;
+    height: 1px;
+    background-color: var(--cor-secundaria);
+    margin: 10px 0;
+}
+
+/* Seção de projetos */
+#projetos {
+    padding: 20px;
+}
+
+.topicos-projetos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.projeto {
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    border: 1px solid var(--borda-projeto);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.projeto a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.projeto img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
 
 .projeto p {
+    margin: 10px 0;
     color: var(--cor-primaria);
 }
 
-/* ... (resto do seu CSS) ... */
+.projeto p:last-of-type { /* Estilo para a descrição do projeto */
+    font-size: 14px;
+    color: var(--cor-secundaria);
+    padding: 0 10px;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--cor-terciaria);
+    padding: 20px;
+    text-align: center;
+}
+
+.informacoes-contato {
+    margin-bottom: 20px;
+}
+
+.informacoes-contato h2 {
+    color: var(--cor-primaria);
+}
+
+.informacoes-contato p {
+    margin: 5px 0;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .projeto {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .projeto {
+        width: 100%;
+    }
+}
